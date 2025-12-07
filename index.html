@@ -39,17 +39,30 @@
 <body>
     <header class="header">
         <div class="header-wrapper">
-            <span class="header-icon-wrapper">
+            <span class="header-icon-wrapper" onclick="showSection('home-section')" data-label="Home">
                 <i class="ph-fill ph-house"></i>
+            </span>
+            <span class="header-icon-wrapper" onclick="showSection('countdown-section')" data-label="Countdown">
+                <i class="ph-fill ph-clock-countdown"></i>
+            </span>
+            <span class="header-icon-wrapper" onclick="showSection('memory-section')" data-label="Memory Jar">
+                <i class="ph-fill ph-jar"></i>
+            </span>
+            <span class="header-icon-wrapper" onclick="showSection('wish-section')" data-label="New Wish">
+                <i class="ph-fill ph-plus-circle"></i>
             </span>
         </div>
     </header>
-    <main class="hero-title-container">
-        <div class="hero-title-wrapper">
-            <h1 class="hero-title">Yearly</h1>
-            <p class="hero-title-tagline">Capture the year, one moment at a time</p>
-        </div>
-    </main>
+    <section id="home-section">
+        <main class="hero-title-container">
+            <div class="hero-title-wrapper">
+                <h1 class="hero-title">Yearly</h1>
+                <p class="hero-title-tagline">Capture the year, one moment at a time</p>
+                <!-- <button class="hero-cta">Start Now</button> -->
+            </div>
+        </main>
+    </section>
+
 </body>
 
 </html>
